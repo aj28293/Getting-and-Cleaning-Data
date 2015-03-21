@@ -29,7 +29,7 @@ For each record in the dataset it is provided:
 
 After setting the source directory for the files, read into tables the data located in
 
-1. Merges the training and the test sets to create one data set.
+Step 1 Merges the training and the test sets to create one data set.
 
 features.txt
 activity_labels.txt
@@ -42,21 +42,21 @@ y_test.txt
 
 
 
-2. Extract only the measurements on the mean and standard deviation for each measurement
+Step 2 Extract only the measurements on the mean and standard deviation for each measurement
 
 Create a logcal vector that contains TRUE values for Features including "mean" and "std" columns.  Subset this data to keep only the necessary columns.
 
-3. Use descriptive activity names to name the activities in the data set
+Step 3 Use descriptive activity names to name the activities in the data set
 
 Update X data column names from Featrues.txt
 Update Y data column names from Activity_Labels.txt
 
 
-4. Appropriately label the data set with descriptive activity names.
+Step 4 Appropriately label the data set with descriptive activity names.
 
 Assign column names with Subject and Activity and merge to create one data set.
 
 
-5. Create a second, independent tidy data set with the average of each variable for each activity and each subject.
+Step 5 Create a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 Create a data set with the average of each veriable for each activity and subject in file "final_data_averages.txt"
